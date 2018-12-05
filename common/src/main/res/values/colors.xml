@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="player_color_primary">#fc4b87</color>
+    <color name="player_color_primarydark">#cf2660</color>
+    <color name="player_color_accent">#4e0820</color>
+    <color name="player_windows_bg">#FFFFFF</color>
+    <color name="progress_color">#30f503</color>
+    <color name="hx_color_black">#000000</color>
+    <!--Text-->
+    <color name="text_color_theme_main">#2E363F</color>
+    <!--主色选中后颜色-->
+    <color name="hx_selected_color">#3497e8</color>
+</resources>

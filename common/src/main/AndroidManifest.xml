@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.common2">
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <application android:name=".application.BaseApplication">
+        <activity
+            android:name=".activity.BaseActivity"
+            android:theme="@style/CommonMainTheme" />
+        <activity android:name=".activity.TestActivity"/>
+    </application>
+
+</manifest>
