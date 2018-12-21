@@ -18,14 +18,16 @@ public class test {
 
 
     public static void main(String[] args) throws IOException {
-        byte s = (byte) sum;
-        System.out.println(s + "");
-        if (Double.compare(d1, d2) >= 0) {
-            System.out.println(d1 + "!!");
-        } else {
-            System.out.println(d2 + "!!!");
-        }
-        System.out.print(c1+0);
+//        byte s = (byte) sum;
+//        System.out.println(s + "");
+//        if (Double.compare(d1, d2) >= 0) {
+//            System.out.println(d1 + "!!");
+//        } else {
+//            System.out.println(d2 + "!!!");
+//        }
+//        System.out.print(c1+0);
+        Dog dog= new Dog();
+        dog.move();
     }
 
 

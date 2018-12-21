@@ -3,8 +3,8 @@
     <color name="colorPrimary">#3F51B5</color>
     <color name="colorPrimaryDark">#303F9F</color>
     <color name="colorAccent">#FF4081</color>
-    <color name="player_color_primary">#fc4b87</color>
-    <color name="player_color_primarydark">#cf2660</color>
+    <color name="player_color_primary">#04f956</color>
+    <color name="player_color_primarydark">#56cf26</color>
     <color name="player_color_accent">#4e0820</color>
     <color name="player_windows_bg">#FFFFFF</color>
     <color name="progress_color">#30f503</color>
@@ -13,4 +13,6 @@
     <color name="text_color_theme_main">#2E363F</color>
     <!--主色选中后颜色-->
     <color name="hx_selected_color">#3497e8</color>
+    <color name="return_cancel_bg">#D7DCE0</color>
+    <color name="return_cancel">#203442</color>
 </resources>

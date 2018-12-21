@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">Player</string>
     <string name="common_title">Player</string>
+
+
+    <!--时间-->
+    <string name="hx_hook_strategy_hour">小时</string>
+    <string name="hx_hook_strategy_minute">分</string>
+    <string name="hx_hook_strategy_second">秒</string>
+    <string name="collect_voice_second">%1$d\"</string>
 </resources>

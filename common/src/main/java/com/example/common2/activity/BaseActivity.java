@@ -2,16 +2,17 @@
 package com.example.common2.activity;
 
 import android.app.Activity;
+import android.content.Context;
 import android.content.pm.ActivityInfo;
+import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.AppCompatActivity;
-import android.os.Bundle;
 import android.view.Window;
-import android.view.WindowManager;
 
 import com.example.common2.R;
 import com.example.common2.application.AppManager;
 import com.example.common2.dialog.NetProgressDialog;
+import com.example.common2.utils.ScreenUtils;
 import com.example.common2.utils.StackAct;
 import com.example.common2.utils.StatusBarCompat;
 
@@ -29,7 +30,7 @@ public abstract class BaseActivity extends AppCompatActivity {
     public abstract int getLayoutId();
 
     private void setWindow() {
-        //AppManager.getAppManager().addActivity(this);
+        AppManager.getAppManager().addActivity(this);
         StackAct.instance().addActivity(this);
         //设置无标题
         requestWindowFeature(Window.FEATURE_NO_TITLE);
@@ -37,7 +38,8 @@ public abstract class BaseActivity extends AppCompatActivity {
         setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
         //取消状态栏
         //getWindow().setFlags(WindowManager.LayoutParams.FLAG_FULLSCREEN, WindowManager.LayoutParams.FLAG_FULLSCREEN);
-        SetStatusBarColor();
+        //SetStatusBarColor();//状态栏染色
+        SetTranslanteBar();//沉浸式
     }
 
     /**
@@ -45,6 +47,14 @@ public abstract class BaseActivity extends AppCompatActivity {
      */
     protected void SetStatusBarColor() {
         StatusBarCompat.setStatusBarColor(this, ContextCompat.getColor(this, R.color.hx_selected_color));
+    }
+
+    protected int ScreenWidth(Context context) {
+        return ScreenUtils.getWidthPixels(context);
+    }
+
+    protected int ScreenHeight(Context context) {
+        return ScreenUtils.getHeightPixels(context);
     }
 
     /**

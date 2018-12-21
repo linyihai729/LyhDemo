@@ -24,4 +24,11 @@
         android:id="@+id/btn_submit"
         android:text="提交"
         />
+    <ImageView
+        android:id="@+id/iv_show"
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        />
 </LinearLayout>
